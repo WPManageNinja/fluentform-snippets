@@ -3,13 +3,13 @@ This repository contains useful fluent form snippets which will make your forms 
 Please use which are appropriate for you.
 
 
-###PHP Snippets
+### PHP Snippets
 
 - `Email Validation` Limit Email Domains (Accept only particular Domains) [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/wiki/Limit-Email-Domains)
 - `Email Validation` Ban Email Domains (Ban particular Domains) [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/wiki/Ban-Email-Domains)
 
 
-###Contribution:
+### Contribution:
 Please feel free to fork and contribute and do a pull request.
 
 ### Useful Links

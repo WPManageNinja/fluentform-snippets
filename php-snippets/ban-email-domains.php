@@ -19,19 +19,17 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
     $errorMessage = 'The provided email domain is not accepted'; // You may change here
 
     $fieldName = $field['name'];
-    $value = (isset($formData[$fieldName]));
-    if (!$value) {
+    if (empty($formData[$fieldName])) {
         return $error;
     }
 
-    $inputDomain = array_pop(explode('@', $value));
+    $valueArray = explode('@', $formData[$fieldName]);
+    $inputDomain = array_pop($valueArray);
 
     if (in_array($inputDomain, $invalidDomains)) {
         return $errorMessage;
     }
-
     return $error;
-
 }, 10, 5);
 
 /*
@@ -53,12 +51,12 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
     }
 
     $fieldName = $field['name'];
-    $value = (isset($formData[$fieldName]));
-    if (!$value) {
+    if (empty($formData[$fieldName])) {
         return $error;
     }
 
-    $inputDomain = array_pop(explode('@', $value));
+    $valueArray = explode('@', $formData[$fieldName]);
+    $inputDomain = array_pop($valueArray);
 
     if (in_array($inputDomain, $invalidDomains)) {
         return $errorMessage;

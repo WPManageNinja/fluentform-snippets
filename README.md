@@ -7,6 +7,7 @@ Please use which are appropriate for you.
 
 - `Email Validation` Limit Email Domains (Accept only particular Domains) [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/wiki/Limit-Email-Domains)
 - `Email Validation` Ban Email Domains (Ban particular Domains) [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/wiki/Ban-Email-Domains)
+- `Email Validation with TrueMail` Validate Email with TrueMail API [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/email-varification-with-truemail.php)
 - `TextArea Validation` Check if textarea contain url. if yes, make the form submission failed. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/custom-validation-example.php)
 
 

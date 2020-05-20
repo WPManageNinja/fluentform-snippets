@@ -60,7 +60,7 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
     $inputDomain = array_pop($valueArray);
 
     if (!in_array($inputDomain, $acceptedDomains)) {
-        return $errorMessage;
+        return [$errorMessage];
     }
     return $error;
 

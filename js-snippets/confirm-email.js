@@ -13,3 +13,11 @@ $confirmEmail.on('blur', function() {
         // Or you can show the custom message somewhere
     }
 });
+
+// Additional code to check if user fixed the type in the primary email
+$email.on('blur', function() {
+    if($confirmEmail.val() && $(this).val() != $confirmEmail.val()) {
+        alert('Email not matching');
+        // Or you can show the custom message somewhere
+    }
+});

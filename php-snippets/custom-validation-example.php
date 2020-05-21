@@ -33,7 +33,7 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
 
     foreach ($bannedStrings as $string) {
         if(strpos($formData[$fieldName], $string) !== false) {
-            return $errorMessage;
+            return [$errorMessage];
         }
     }
 
@@ -59,7 +59,7 @@ add_filter('fluentform_validate_input_item_textarea', function ($error, $field, 
 
     foreach ($bannedStrings as $string) {
         if(strpos($formData[$fieldName], $string) !== false) {
-            return $errorMessage;
+            return [$errorMessage];
         }
     }
 

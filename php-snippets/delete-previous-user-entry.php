@@ -11,7 +11,7 @@
  * Snippet: 1
  * This will apply for only form id: 12
  */
-add_action('fluenform_before_submission_confirmation', function ($entryId, $formData, $form) {
+add_action('fluentform_before_submission_confirmation', function ($entryId, $formData, $form) {
     if($form->id != 12) { // Say your target form is 12
         return;
     }
@@ -40,7 +40,7 @@ add_action('fluenform_before_submission_confirmation', function ($entryId, $form
  * This will apply for all the forms in your site
  *
  */
-add_action('fluenform_before_submission_confirmation', function ($entryId, $formData, $form) {
+add_action('fluentform_before_submission_confirmation', function ($entryId, $formData, $form) {
     $currentUserId = get_current_user_id();
     if(!$currentUserId) {
         return; // user is not logged in so no further action

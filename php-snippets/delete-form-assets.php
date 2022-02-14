@@ -6,6 +6,10 @@ function deleteFormAssests($formId)
     wpFluent()->table('fluentform_submissions')
         ->where('form_id', $formId)
         ->delete();
+    
+     wpFluent()->table('fluentform_draft_submissions')
+        ->where('form_id', $formId)
+        ->delete();
 
     wpFluent()->table('fluentform_submission_meta')
         ->where('form_id', $formId)
